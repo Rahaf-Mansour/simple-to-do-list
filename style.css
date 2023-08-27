@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(150deg, #f512, #8a548a);
+    padding: 15px;
+}
+
+.toDo-app {
+    max-width: 45%;
+    min-height: 50%;
+    margin: 100px auto 20px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.toDo-app .app-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.toDo-app .app-title img {
+    width: 1.2em;
+    margin-left: 10px;
+}
+
+.adding-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ededed;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.adding-row input {
+    background: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    /*To take the full width*/
+    padding: 10px;
+}
+
+.adding-row .add-btn {
+    border: none;
+    outline: none;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background-color: #8a548a;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.unordered-list {
+    padding: 10px;
+}
+
+.unordered-list li {
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+}
+
+.unordered-list li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/unchecked.png);
+    left: 8px;
+    top: 12px;
+}
+
+.unordered-list li.selected {
+    color: #6c7878b5;
+    text-decoration: line-through;
+}
+
+
+.unordered-list li.selected::before {
+    background-image: url(images/checked.png);
+}
+
+
+.unordered-list li span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+.unordered-list li span:hover {
+    border-radius: 50%;
+    background-color: #ededed;
+    color: #673d67;
+}

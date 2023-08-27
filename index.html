@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning - toDo list</title>
+    <!-- Link to the css style file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="toDo-app">
+        <h2 class="app-title">
+          ToDo List <img src="images/icon.png" alt="ToDo list icon" />
+        </h2>
+        <div class="adding-row">
+          <input
+            type="text"
+            class="add-text"
+            id="add-text"
+            placeholder="Add a new task"
+          />
+          <button class="add-btn" onclick="addTask()">Add</button>
+        </div>
+        <!--adding-row ending tag-->
+        <ul class="unordered-list" id="unordered-list">
+          <!-- <li class="selected">First Task</li>
+          <li>Second Task</li>
+          <li>Third Task</li> -->
+        </ul>
+      </div>
+      <!--toDo-app ending tag-->
+    </div>
+    <!--container ending tag-->
+    <!-- Link to the main JavaScript file -->
+    <script src="main.js"></script>
+  </body>
+</html>
